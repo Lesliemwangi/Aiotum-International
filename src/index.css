@@ -1,0 +1,15 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #000808, #09b5be ), 
+  url("https://images.pexels.com/photos/604684/pexels-photo-604684.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  /* #3b82f6 */
+}
+
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
