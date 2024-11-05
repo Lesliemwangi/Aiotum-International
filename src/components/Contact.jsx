@@ -32,23 +32,23 @@ function Contact() {
   return (
     <footer className="w-full text-white py-12">
       <div className="container mx-auto text-center">
-        <h3 className="text-3xl font-bold">
+        <h3 className="text-4xl text-teal-400 font-bold">
           Ready to Revolutionize Your Business?
         </h3>
-        <p className="mt-4">
+        <p className="mt-4 text-xl">
           Contact us today to start your AI or software development journey.
         </p>
 
         <form
-          className="mt-6 max-w-lg mx-auto"
+          className="mt-6 max-w-lg mx-auto text-white"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="mb-4">
+          <div className="mb-4 text-white">
             <input
               type="text"
               placeholder="Your Name"
               {...register("name")}
-              className="w-full px-4 py-2 text-black rounded-lg"
+              className="w-full px-4 py-2 text-white rounded-lg"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
@@ -60,7 +60,7 @@ function Contact() {
               type="email"
               placeholder="Your Email"
               {...register("email")}
-              className="w-full px-4 py-2 text-black rounded-lg"
+              className="w-full px-4 py-2 text-white rounded-lg"
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">
@@ -74,7 +74,7 @@ function Contact() {
               type="tel"
               placeholder="Your Phone"
               {...register("phone")}
-              className="w-full px-4 py-2 text-black rounded-lg"
+              className="w-full px-4 py-2 text-white rounded-lg"
             />
             {errors.phone && (
               <p className="text-red-500 text-sm mt-1">
@@ -88,7 +88,7 @@ function Contact() {
               type="text"
               placeholder="Subject"
               {...register("subject")}
-              className="w-full px-4 py-2 text-black rounded-lg"
+              className="w-full px-4 py-2 text-white rounded-lg"
             />
             {errors.subject && (
               <p className="text-red-500 text-sm mt-1">
@@ -102,7 +102,7 @@ function Contact() {
               placeholder="Your Message"
               {...register("message")}
               rows="4"
-              className="w-full px-4 py-2 text-black rounded-lg"
+              className="w-full px-4 py-2 text-white rounded-lg"
             />
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">
