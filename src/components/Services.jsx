@@ -1,6 +1,7 @@
 // src/components/Services.js
 // import React from 'react';
 import { FaChartLine, FaLightbulb, FaBullhorn, FaUserTie, FaProjectDiagram, FaRegHandshake } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
@@ -84,9 +85,11 @@ function Services() {
           <p className="mb-8 text-2xl max-w-2xl mx-auto">
             Get in touch with our team of experts to discover how we can help you reach your business goals with tailored strategies and innovative solutions.
           </p>
-          <button className="bg-teal-400 text-white px-10 py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500">
+          <Link to="/contact">
+          <button className="mt-8 bg-teal-400 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
     </section>

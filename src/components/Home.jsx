@@ -1,5 +1,6 @@
 // src/components/Home.js
 // import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -11,9 +12,11 @@ function Home() {
         <p className="mt-4 text-lg md:text-xl max-w-lg md:max-w-2xl mx-auto animate-slide-in">
           Your trusted partner in Business Development and Consultancy. We help you unlock growth and drive success.
         </p>
-        <button className="mt-8 bg-teal-400 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500">
-          Get Started
-        </button>
+        <Link to="/services">
+          <button className="mt-8 bg-teal-400 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500">
+            Get Started
+          </button>
+          </Link>
       </div>
 
       {/* Why Choose Us Section */}
