@@ -1,5 +1,6 @@
 // src/components/About.js
 // import React from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -102,12 +103,11 @@ function About() {
           <p className="text-xl mb-6">
             Let Aiotum International partner with you on your journey to success. Get in touch with us today to learn more about our services.
           </p>
-          <a
-            href="/contact"
-            className="mt-8 bg-teal-400 text-white px-8 py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500"
-          >
+          <Link to="/contact">
+          <button className="mt-8 bg-teal-400 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-semibold transition-transform transform hover:scale-105 hover:bg-teal-300 focus:ring-4 focus:ring-teal-500">
             Contact Us
-          </a>
+          </button>
+          </Link>
         </div>
       </div>
     </section>
